@@ -32,10 +32,10 @@ def welcome():
     return 'welcome re arxidi'
 
 
-# if __name__ == 'main':
-from db import db
-db.init_app(app)
-app.run(debug=True)
+if __name__ == 'main':
+    from db import db
+    db.init_app(app)
+    app.run(debug=True)
 
 
 
