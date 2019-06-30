@@ -15,9 +15,9 @@ jwt = JWT(app, authenticate, identity)
 
 # creates the tables that we need
 # according to the schema we gave to the Models file
-@app.before_first_request
-def create_tables():
-    db.create_all()
+# @app.before_first_request
+# def create_tables():
+#     db.create_all()
 
 
 api.add_resource(Store, '/store/<string:name>')
